@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Ejemplo de formulario con Bootstrap</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+<div class="container">
+    <div class="row mt-4">
+        <div class="col-md-6 offset-md-3">
+            <h1 style=" text-align: center; padding-bottom: 20px">Consulta de datos de la temperatura del aire en Colombia</h1>
+            <form>
+                <div class="form-group">
+                    <label for="searchInput">Departamento:</label>
+                    <div class="input-group">
+                        <input type="text" class="form-control" id="searchInput" placeholder="Ingrese un departamento">
+                        <div class="input-group-append">
+                            <button class="btn btn-primary" type="submit" onclick="buscar()">Buscar</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="row mt-4">
+        <div class="col-md-6 offset-md-3">
+            <table class="table">
+                <thead>
+                <tr>
+                    <th scope="col">Fecha</th>
+                    <th scope="col">Valor</th>
+                    <th scope="col">Estación</th>
+                    <th scope="col">Departamento</th>
+                    <th scope="col">Municipio</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+<script src="js/index.js"></script>
+</body>
+</html>
